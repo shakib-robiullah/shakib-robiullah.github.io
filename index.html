@@ -1,184 +1,224 @@
-<!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Md. Nazmus Shakib Robiullah - Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="landing is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md. Nazmus Shakib Robiullah | Civil Engineer</title>
+  <style>
+    :root {
+      --primary: #0f2942;
+      --accent: #1d6fa5;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1rem 5%;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    }
+    header h1 { font-size: 1.15rem; letter-spacing: 0.4px; }
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      margin-left: 1.25rem;
+      font-size: 0.92rem;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: #ffffff; }
+    .hero {
+      background: linear-gradient(135deg, #0f2942 0%, #1e4976 100%);
+      color: #fff;
+      padding: 4.5rem 5%;
+      text-align: center;
+    }
+    .hero h2 { font-size: 2.2rem; margin-bottom: 0.6rem; }
+    .hero p.subtitle {
+      font-size: 1.1rem;
+      color: #cbd5e1;
+      max-width: 720px;
+      margin: 0 auto 1.8rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.72rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin: 0.35rem;
+      transition: transform 0.15s, background 0.2s;
+    }
+    .btn-primary { background: #38bdf8; color: #0f172a; }
+    .btn-primary:hover { background: #7dd3fc; transform: translateY(-1px); }
+    .btn-outline { border: 1.5px solid #94a3b8; color: #fff; }
+    .btn-outline:hover { border-color: #fff; background: rgba(255,255,255,0.08); }
+    section {
+      max-width: 1000px;
+      margin: 2.5rem auto;
+      padding: 0 5%;
+    }
+    h3.section-title {
+      font-size: 1.45rem;
+      color: var(--primary);
+      border-left: 4px solid var(--accent);
+      padding-left: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.4rem;
+      margin-bottom: 1.1rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+    .card h4 { color: var(--primary); font-size: 1.1rem; margin-bottom: 0.25rem; }
+    .meta { color: var(--muted); font-size: 0.88rem; margin-bottom: 0.65rem; }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 0.9rem;
+    }
+    .skill-tag {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      padding: 0.85rem 1rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.94rem;
+    }
+    .skill-tag span {
+      display: block;
+      font-weight: 400;
+      font-size: 0.84rem;
+      color: var(--muted);
+      margin-top: 0.2rem;
+    }
+    ul.clean-list { margin-left: 1.2rem; color: #334155; }
+    ul.clean-list li { margin-bottom: 0.4rem; }
+    footer {
+      text-align: center;
+      padding: 2rem 5%;
+      background: var(--primary);
+      color: #94a3b8;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 640px) {
+      header { flex-direction: column; gap: 0.6rem; }
+      nav a { margin: 0 0.6rem; }
+      .hero h2 { font-size: 1.65rem; }
+    }
+  </style>
+</head>
+<body>
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+  <header>
+    <h1>Md. Nazmus Shakib Robiullah</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#research">Research</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Md. Nazmus Shakib Robiullah</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Generic</a></li>
-											<li><a href="elements.html">Elements</a></li>
-											<li><a href="#">Sign Up</a></li>
-											<li><a href="#">Log In</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</header>
+  <div class="hero">
+    <h2>Md. Nazmus Shakib Robiullah</h2>
+    <p class="subtitle">
+      Civil Engineering Graduate (B.Sc.) | Structural & Geotechnical Modeling, CAD/BIM Drafting, and Quality Control
+    </p>
+    <a href="CV_Shakib.pdf" class="btn btn-primary" download>Download CV (PDF)</a>
+    <a href="#contact" class="btn btn-outline">Contact Me</a>
+  </div>
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<h2>Md. Nazmus Shakib Robiullah</h2>
-							<p>Civil Engineer<br />
-							site template freebie<br />
-							crafted by <a href="http://html5up.net">Civil Engineer</a>.</p>
-							<ul class="actions special">
-								<li><a href="#" class="button primary">View Portfolio</a></li>
-							</ul>
-						</div>
-						<a href="#one" class="more scrolly">Learn More</a>
-					</section>
+  <section id="about">
+    <h3 class="section-title">About & Education</h3>
+    <div class="card">
+      <p>
+        Detail-oriented Civil Engineering graduate specializing in structural analysis, 3D finite element geotechnical modeling, and engineering drafting. Experienced in superstructural quality control, CPM project scheduling, and workflow automation.
+      </p>
+      <br />
+      <h4>B.Sc. in Civil Engineering</h4>
+      <p class="meta">International University of Business Agriculture and Technology (IUBAT) | Graduated: September 2026 | CGPA: 3.45 / 4.00</p>
+    </div>
+  </section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Hello! I am a dedicated Civil Engineer with a strong foundation in structural design and 3D numerical modeling. Alongside my expertise in industry-standard software like AutoCAD, ETABS, and Abaqus, I am highly passionate about Generative AI and Prompt Engineering. I aim to blend analytical engineering problem-solving with cutting-edge AI tools to deliver innovative solutions, whether in structural consultancy, quality control, or digital freelancing<br />
-								eget augue amet aliquet nisl cep donec</h2>
-								<p>Dedicated Civil Engineer with a B.Sc. from IUBAT and hands-on internship experience in multi-storied residential construction. Adept at 3D numerical modeling, structural design, and prompt engineering. Looking to secure an entry-level non-site engineering role to contribute technical proficiency and problem-solving skills to a dynamic engineering team<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
-							</header>
-							<ul class="icons major">
-								<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
-							</ul>
-						</div>
-					</section>
+  <section id="experience">
+    <h3 class="section-title">Engineering Experience</h3>
+    <div class="card">
+      <h4>Trainee Engineer — Dhaka Chattogram Construction Ltd</h4>
+      <p class="meta">June 2026 – September 2026 | Uttara, Dhaka</p>
+      <ul class="clean-list">
+        <li>Supervised superstructural construction activities and tracked structural components for an 8-storied residential building project.</li>
+        <li>Conducted field material quality tests and maintained daily engineering site logbooks.</li>
+        <li>Prepared a 93-day Critical Path Method (CPM) and Gantt construction schedule.</li>
+      </ul>
+    </div>
+  </section>
 
-				<!-- Two -->
-					<section id="two" class="wrapper alt style2">
-						<section class="spotlight">
-							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-								<h2>Trainee Engineer | Dhaka Chattogram Construction Ltd<br />
-								sed ullamcorper</h2>
-								<p>Professional Experience
-Trainee Engineer | Dhaka Chattogram Construction Ltd June 2026 – September 2026
-● Supervised the daily construction phases of an 8-storied residential building project in Uttara Sector 17, ensuring strict adherence to structural design and safety codes.
-● Tracked and evaluated superstructural construction components, coordinating with site teams to maintain project workflow and deadlines.
-● Conducted regular quality control (QC) checks on incoming construction materials, including concrete and reinforcement, to maintain high engineering standards.
-● Prepared detailed engineering practicum reports documenting structural progress, material utilization, and overall daily operations.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-								<h2>Three-Dimensional Numerical Modeling and Finite Element Analysis of Shallow Foundation Using Abaqus<br />
-								elementum magna</h2>
-								<p>Developed a high-fidelity 3D finite element model using Abaqus/Standard to simulate the non-linear load-displacement trajectory and bearing capacity of cohesionless soils.
-● Analyzed three-dimensional spatial stress distributions (pressure bulbs) and surface settlement troughs by applying the Mohr-Coulomb failure criterion.
-● Validated the extracted 3D numerical bearing capacity results against classical analytical frameworks, including Terzaghi, Meyerhof, and Vesic equations, to ensure computational accuracy.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-								<h2>Education
-B.Sc. in Civil Engineering, International University of Business Agriculture and Technology (IUBAT) CGPA: 3.45 | Graduation: September 2026
-Higher Secondary Certificate (HSC) GPA: 3.83 | Passing Year: 2019
-Secondary School Certificate (SSC) GPA: 5.00 | Passing Year: 2017<br />
-								sed condimentum</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-							</div>
-						</section>
-					</section>
+  <section id="research">
+    <h3 class="section-title">Thesis & Technical Projects</h3>
+    <div class="card">
+      <h4>3D Finite Element Analysis of Bearing Capacity & Settlement of a Shallow Foundation on Cohesionless Soil</h4>
+      <p class="meta">Undergraduate Thesis | Abaqus/CAE (Mohr-Coulomb Plasticity, C3D8P Elements)</p>
+      <p>
+        Developed a 10m × 10m × 10m 3D finite element soil-foundation model in Abaqus and validated ultimate bearing capacity results against classical Terzaghi, Meyerhof, and Vesic analytical equations.
+      </p>
+    </div>
+    <div class="card">
+      <h4>Smartphone-Based Pavement Quality Inspection</h4>
+      <p class="meta">Transportation Engineering Project | Sensor Data Analysis</p>
+      <p>
+        Evaluated road surface roughness and ride quality by analyzing vertical (z-axis) acceleration data collected via smartphone accelerometers.
+      </p>
+    </div>
+  </section>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style3 special">
-						<div class="inner">
-							<header class="major">
-								<h2>My core technical proficiencies include</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
-							</header>
-							<ul class="features">
-								<li class="icon fa-paper-plane">
-									<h3>AutoCAD, ETABS, Abaqus, ArcGIS, Prompt Engineering</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-laptop">
-									<h3>Ac Augue Eget</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-code">
-									<h3>Mus Scelerisque</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-headphones-alt">
-									<h3>Mauris Imperdiet</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-heart">
-									<h3>Aenean Primis</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-flag">
-									<h3>Tortor Ut</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-							</ul>
-						</div>
-					</section>
+  <section id="skills">
+    <h3 class="section-title">Technical Software & Tools</h3>
+    <div class="skills-grid">
+      <div class="skill-tag">AutoCAD <span>2D Architectural & Structural Drafting</span></div>
+      <div class="skill-tag">ETABS <span>RC Building Analysis & Design</span></div>
+      <div class="skill-tag">Abaqus / CAE <span>3D Finite Element Modeling</span></div>
+      <div class="skill-tag">Revit & ArcGIS <span>BIM Modeling & Spatial Mapping</span></div>
+      <div class="skill-tag">Python <span>Data Analysis & Workflow Automation</span></div>
+      <div class="skill-tag">Project Planning <span>CPM Scheduling & Field QC</span></div>
+    </div>
+  </section>
 
-				<!-- CTA -->
-					<section id="cta" class="wrapper style4">
-						<div class="inner">
-							<header>
-								<h2>Open to Opportunities</h2>
-								<p>I am currently seeking entry-level non-site engineering roles (such as RMC Quality Control or Structural Design) as well as freelance opportunities in Generative AI</p>
-							</header>
-							<ul class="actions stacked">
-								<li><a href="#" class="button fit primary">Email Me</a></li>
-								<li><a href="mailto:shakibn327@gmail.com" class="button fit">Learn More</a></li>
-							</ul>
-						</div>
-					</section>
+  <section id="contact">
+    <h3 class="section-title">Contact</h3>
+    <div class="card">
+      <!-- নিচের ইমেইল ও LinkedIn লিংকটি আপনার আসল তথ্য দিয়ে আপডেট করে নেবেন -->
+      <p><strong>Email:</strong> your.email@example.com</p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com" target="_blank">linkedin.com/in/your-profile</a></p>
+      <p><strong>Location:</strong> Uttara, Dhaka, Bangladesh</p>
+    </div>
+  </section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="icons">
-							<li><a href="[https://linkedin.com/in/md-nazmus-shakib-robiullah-a8258b405](https://linkedin.com/in/md-nazmus-shakib-robiullah-a8258b405)" class="icon brands fa-linkedin"></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy; Md. Nazmus Shakib Robiullah</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
+  <footer>
+    &copy; 2026 Md. Nazmus Shakib Robiullah. All rights reserved.
+  </footer>
 
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
